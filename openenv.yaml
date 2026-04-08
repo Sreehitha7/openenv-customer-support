@@ -1,12 +1,21 @@
 name: customer-support-env
-description: Customer support simulation
+description: Customer support simulation environment
 
-entrypoint: app.main:app
+version: 1.0
+
+entrypoint:
+  module: app.main
+  app: app
+
+endpoints:
+  reset: /reset
+  step: /step
+  state: /state
 
 tasks:
   - id: easy
-    description: Order tracking
+    description: Order tracking query
   - id: medium
-    description: Refund handling
+    description: Refund request
   - id: hard
     description: Angry escalation

@@ -1,0 +1,15 @@
+[project]
+name = "openenv-customer-support"
+version = "0.1.0"
+description = "Customer support OpenEnv environment"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "pydantic",
+    "requests",
+    "openai"
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"

@@ -1,23 +1,4 @@
 [project]
 name = "openenv_customer_support"
 version = "0.1.0"
-description = "Customer support OpenEnv environment"
-requires-python = ">=3.10"
-
-dependencies = [
-    "fastapi",
-    "uvicorn",
-    "pydantic",
-    "requests",
-    "openai"
-]
-
-[tool.setuptools.packages.find]
-where = ["app"]
-
-[tool.openenv]
-entrypoint = "app.main:app"
-
-[build-system]
-requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
+dependencies = []
